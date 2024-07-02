@@ -20,7 +20,7 @@ const CreateQuizForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/quizzes', {
+      const response = await axios.post('https://quiz-webapp-7gsd.vercel.app/quizzes', {
         title,
         description,
         questions,
