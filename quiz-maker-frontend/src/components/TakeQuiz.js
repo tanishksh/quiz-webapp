@@ -17,7 +17,7 @@ const TakeQuiz = () => {
     // Function to fetch quiz details when component mounts
     const fetchQuiz = async () => {
       try {
-        const response = await axios.get(`http://localhost:5000/quizzes/${quizId}`);
+        const response = await axios.get(`https://quiz-webapp-7gsd.vercel.app/quizzes/${quizId}`);
         setQuiz(response.data); // Set fetched quiz data to state
       } catch (error) {
         console.error('Error fetching quiz:', error);
