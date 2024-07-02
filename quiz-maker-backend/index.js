@@ -14,7 +14,7 @@ const PORT = process.env.PORT || 5000;
 // Middleware
 app.use(cors(
   {
-    origin:["https://quiz-webapp-orcin.vercel.app"],
+    origin:["https://quiz-webapp-7gsd.vercel.app/"],
     methods: ["POST","GET"],
     credentials: true
   }
