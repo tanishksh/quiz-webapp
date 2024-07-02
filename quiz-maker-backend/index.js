@@ -12,13 +12,14 @@ const PORT = process.env.PORT || 5000;
 
 
 // Middleware
-app.use(cors(
-  {
-    origin:["https://quiz-webapp-7gsd.vercel.app/"],
-    methods: ["POST","GET"],
-    credentials: true
-  }
-));
+// Middleware
+app.use(cors({
+  origin: "https://quiz-webapp-7gsd.vercel.app", // Remove the array brackets if only one origin
+  methods: ["POST", "GET"],
+  credentials: true
+}));
+
+
 app.use(express.json());
 
 // MongoDB Connection
